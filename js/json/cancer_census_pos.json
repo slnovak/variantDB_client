@@ -1,0 +1,2812 @@
+var gene_census = {
+    "ABI1": {
+        "referenceName": "10",
+        "start": 27035522,
+        "end": 27150016
+    },
+    "ABL1": {
+        "referenceName": "9",
+        "start": 133589333,
+        "end": 133763062
+    },
+    "ABL2": {
+        "referenceName": "1",
+        "start": 179068462,
+        "end": 179198819
+    },
+    "ACSL3": {
+        "referenceName": "2",
+        "start": 223725652,
+        "end": 223809357
+    },
+    "ACVR1": {
+        "referenceName": "2",
+        "start": 158592956,
+        "end": 158732374
+    },
+    "AF15Q14": {
+        "referenceName": "15",
+        "start": 40886218,
+        "end": 40956540
+    },
+    "AF1Q": {
+        "referenceName": "1",
+        "start": 151030234,
+        "end": 151040973
+    },
+    "AF3p21": {
+        "referenceName": "3",
+        "start": 48711277,
+        "end": 48723797
+    },
+    "AF5q31": {
+        "referenceName": "5",
+        "start": 132211071,
+        "end": 132299326
+    },
+    "AKAP9": {
+        "referenceName": "7",
+        "start": 91570181,
+        "end": 91739987
+    },
+    "AKT1": {
+        "referenceName": "14",
+        "start": 105235686,
+        "end": 105262088
+    },
+    "AKT2": {
+        "referenceName": "19",
+        "start": 40736224,
+        "end": 40791443
+    },
+    "ALDH2": {
+        "referenceName": "12",
+        "start": 112204691,
+        "end": 112255333
+    },
+    "ALK": {
+        "referenceName": "2",
+        "start": 29415640,
+        "end": 30144432
+    },
+    "ALO17": {
+        "referenceName": "17",
+        "start": 78234665,
+        "end": 78269256
+    },
+    "AMER1": {
+        "referenceName": "X",
+        "start": 63404997,
+        "end": 63425624
+    },
+    "APC": {
+        "referenceName": "5",
+        "start": 112043195,
+        "end": 112181936
+    },
+    "ARHGEF12": {
+        "referenceName": "11",
+        "start": 120207623,
+        "end": 120360645
+    },
+    "ARHH": {
+        "referenceName": "4",
+        "start": 40192673,
+        "end": 40248587
+    },
+    "ARID1A": {
+        "referenceName": "1",
+        "start": 27022524,
+        "end": 27108595
+    },
+    "ARID1B": {
+        "referenceName": "6",
+        "start": 157099063,
+        "end": 157531913
+    },
+    "ARID2": {
+        "referenceName": "12",
+        "start": 46123448,
+        "end": 46301823
+    },
+    "ARNT": {
+        "referenceName": "1",
+        "start": 150782181,
+        "end": 150849244
+    },
+    "ASPSCR1": {
+        "referenceName": "17",
+        "start": 79934683,
+        "end": 79975282
+    },
+    "ASXL1": {
+        "referenceName": "20",
+        "start": 30946147,
+        "end": 31027122
+    },
+    "ATF1": {
+        "referenceName": "5",
+        "start": 37812779,
+        "end": 37839788
+    },
+    "ATIC": {
+        "referenceName": "2",
+        "start": 216176540,
+        "end": 216214496
+    },
+    "ATM": {
+        "referenceName": "11",
+        "start": 108093211,
+        "end": 108239829
+    },
+    "ATP1A1": {
+        "referenceName": "1",
+        "start": 116915290,
+        "end": 116952883
+    },
+    "ATP2B3": {
+        "referenceName": "X",
+        "start": 152783134,
+        "end": 152848397
+    },
+    "ATR": {
+        "referenceName": "3",
+        "start": 142168077,
+        "end": 142297668
+    },
+    "ATRX": {
+        "referenceName": "X",
+        "start": 77031202,
+        "end": 77041755
+    },
+    "AXIN1": {
+        "referenceName": "16",
+        "start": 337440,
+        "end": 402673
+    },
+    "AXIN2": {
+        "referenceName": "17",
+        "start": 63524681,
+        "end": 63557765
+    },
+    "BAP1": {
+        "referenceName": "3",
+        "start": 52435029,
+        "end": 52444366
+    },
+    "BCL10": {
+        "referenceName": "1",
+        "start": 85731931,
+        "end": 85742773
+    },
+    "BCL11A": {
+        "referenceName": "2",
+        "start": 60678302,
+        "end": 60780702
+    },
+    "BCL11B": {
+        "referenceName": "14",
+        "start": 99635624,
+        "end": 99737861
+    },
+    "BCL2": {
+        "referenceName": "18",
+        "start": 60790579,
+        "end": 60987361
+    },
+    "BCL3": {
+        "referenceName": "19",
+        "start": 45250962,
+        "end": 45263301
+    },
+    "BCL5": {
+        "referenceName": "3",
+        "start": 187439165,
+        "end": 187463515
+    },
+    "BCL6": {
+        "referenceName": "3",
+        "start": 187439165,
+        "end": 187463515
+    },
+    "BCL7A": {
+        "referenceName": "12",
+        "start": 122457328,
+        "end": 122499950
+    },
+    "BCL9": {
+        "referenceName": "1",
+        "start": 147013182,
+        "end": 147018772
+    },
+    "BCOR": {
+        "referenceName": "X",
+        "start": 39909068,
+        "end": 40036582
+    },
+    "BCR": {
+        "referenceName": "22",
+        "start": 23521891,
+        "end": 23660224
+    },
+    "BHD": {
+        "referenceName": "17",
+        "start": 17115526,
+        "end": 17140502
+    },
+    "BIRC3": {
+        "referenceName": "11",
+        "start": 102188181,
+        "end": 102210134
+    },
+    "BLM": {
+        "referenceName": "15",
+        "start": 91260558,
+        "end": 91287990
+    },
+    "BMPR1A": {
+        "referenceName": "10",
+        "start": 88516407,
+        "end": 88692595
+    },
+    "BRAF": {
+        "referenceName": "7",
+        "start": 140419127,
+        "end": 140624564
+    },
+    "BRCA1": {
+        "referenceName": "17",
+        "start": 41196312,
+        "end": 41277500
+    },
+    "BRCA2": {
+        "referenceName": "13",
+        "start": 32889611,
+        "end": 32974403
+    },
+    "BRD3": {
+        "referenceName": "9",
+        "start": 136895427,
+        "end": 136933657
+    },
+    "BRD4": {
+        "referenceName": "19",
+        "start": 15346330,
+        "end": 15443356
+    },
+    "BRIP1": {
+        "referenceName": "17",
+        "start": 59758627,
+        "end": 59940882
+    },
+    "BTG1": {
+        "referenceName": "12",
+        "start": 92534054,
+        "end": 92539673
+    },
+    "BUB1B": {
+        "referenceName": "15",
+        "start": 40453224,
+        "end": 40513337
+    },
+    "C15orf21": {
+        "referenceName": "15",
+        "start": 45803334,
+        "end": 45878488
+    },
+    "C15orf55": {
+        "referenceName": "15",
+        "start": 34635516,
+        "end": 34649938
+    },
+    "C16orf75": {
+        "referenceName": "16",
+        "start": 11343476,
+        "end": 11445619
+    },
+    "C2orf44": {
+        "referenceName": "2",
+        "start": 24252210,
+        "end": 24272445
+    },
+    "CACNA1D": {
+        "referenceName": "3",
+        "start": 53528683,
+        "end": 53847760
+    },
+    "CALR": {
+        "referenceName": "19",
+        "start": 13049392,
+        "end": 13055303
+    },
+    "CAMTA1": {
+        "referenceName": "1",
+        "start": 6845384,
+        "end": 7426777
+    },
+    "CANT1": {
+        "referenceName": "17",
+        "start": 76987799,
+        "end": 77005949
+    },
+    "CARD11": {
+        "referenceName": "7",
+        "start": 2945775,
+        "end": 3083579
+    },
+    "CARS": {
+        "referenceName": "11",
+        "start": 3022152,
+        "end": 3078843
+    },
+    "CASP8": {
+        "referenceName": "2",
+        "start": 202098166,
+        "end": 202152434
+    },
+    "CBFA2T1": {
+        "referenceName": "8",
+        "start": 92967195,
+        "end": 93115514
+    },
+    "CBFA2T3": {
+        "referenceName": "16",
+        "start": 88941266,
+        "end": 89043612
+    },
+    "CBFB": {
+        "referenceName": "16",
+        "start": 67063019,
+        "end": 67134961
+    },
+    "CBL": {
+        "referenceName": "11",
+        "start": 119076752,
+        "end": 119178859
+    },
+    "CBLB": {
+        "referenceName": "3",
+        "start": 105374305,
+        "end": 105588396
+    },
+    "CBLC": {
+        "referenceName": "19",
+        "start": 45281126,
+        "end": 45303891
+    },
+    "CCDC6": {
+        "referenceName": "10",
+        "start": 61548521,
+        "end": 61666414
+    },
+    "CCNB1IP1": {
+        "referenceName": "14",
+        "start": 20779527,
+        "end": 20801471
+    },
+    "CCND1": {
+        "referenceName": "11",
+        "start": 69455855,
+        "end": 69469242
+    },
+    "CCND2": {
+        "referenceName": "12",
+        "start": 4382938,
+        "end": 4414516
+    },
+    "CCND3": {
+        "referenceName": "6",
+        "start": 41902671,
+        "end": 42018095
+    },
+    "CCNE1": {
+        "referenceName": "19",
+        "start": 30302805,
+        "end": 30315215
+    },
+    "CD273": {
+        "referenceName": "9",
+        "start": 5510570,
+        "end": 5571254
+    },
+    "CD274": {
+        "referenceName": "9",
+        "start": 5450503,
+        "end": 5470566
+    },
+    "CD74": {
+        "referenceName": "5",
+        "start": 149781200,
+        "end": 149792492
+    },
+    "CD79A": {
+        "referenceName": "19",
+        "start": 42381190,
+        "end": 42384527
+    },
+    "CD79B": {
+        "referenceName": "17",
+        "start": 62006100,
+        "end": 62009714
+    },
+    "CDC73": {
+        "referenceName": "1",
+        "start": 193091147,
+        "end": 193223031
+    },
+    "CDH1": {
+        "referenceName": "19",
+        "start": 3506271,
+        "end": 3538328
+    },
+    "CDH11": {
+        "referenceName": "16",
+        "start": 64977656,
+        "end": 65160015
+    },
+    "CDK12": {
+        "referenceName": "17",
+        "start": 37617764,
+        "end": 37721160
+    },
+    "CDK4": {
+        "referenceName": "12",
+        "start": 58141510,
+        "end": 58149796
+    },
+    "CDK6": {
+        "referenceName": "7",
+        "start": 92234235,
+        "end": 92465908
+    },
+    "CDKN1B": {
+        "referenceName": "12",
+        "start": 12867992,
+        "end": 12875305
+    },
+    "CDKN2A": {
+        "referenceName": "9",
+        "start": 21967752,
+        "end": 21995300
+    },
+    "CDKN2C": {
+        "referenceName": "1",
+        "start": 51426417,
+        "end": 51440305
+    },
+    "CDX2": {
+        "referenceName": "13",
+        "start": 28536274,
+        "end": 28545276
+    },
+    "CEBPA": {
+        "referenceName": "19",
+        "start": 33790840,
+        "end": 33793470
+    },
+    "CEP1": {
+        "referenceName": "22",
+        "start": 37956454,
+        "end": 37965412
+    },
+    "CEP89": {
+        "referenceName": "19",
+        "start": 33366831,
+        "end": 33462897
+    },
+    "CHCHD7": {
+        "referenceName": "8",
+        "start": 57124245,
+        "end": 57131357
+    },
+    "CHEK2": {
+        "referenceName": "22",
+        "start": 29083731,
+        "end": 29138410
+    },
+    "CHIC2": {
+        "referenceName": "4",
+        "start": 54875956,
+        "end": 54930857
+    },
+    "CHN1": {
+        "referenceName": "2",
+        "start": 175664091,
+        "end": 175870097
+    },
+    "CIC": {
+        "referenceName": "19",
+        "start": 42772689,
+        "end": 42799949
+    },
+    "CIITA": {
+        "referenceName": "16",
+        "start": 10971055,
+        "end": 11026138
+    },
+    "CLIP1": {
+        "referenceName": "12",
+        "start": 122755979,
+        "end": 122907179
+    },
+    "CLTC": {
+        "referenceName": "17",
+        "start": 57697050,
+        "end": 57774317
+    },
+    "CLTCL1": {
+        "referenceName": "22",
+        "start": 19208291,
+        "end": 19279239
+    },
+    "CMKOR1": {
+        "referenceName": "2",
+        "start": 237476430,
+        "end": 237491001
+    },
+    "CNOT3": {
+        "referenceName": "19",
+        "start": 54641444,
+        "end": 54646149
+    },
+    "COL1A1": {
+        "referenceName": "17",
+        "start": 48260650,
+        "end": 48278993
+    },
+    "COL2A1": {
+        "referenceName": "12",
+        "start": 48366748,
+        "end": 48398269
+    },
+    "COPEB": {
+        "referenceName": "10",
+        "start": 3818188,
+        "end": 3827473
+    },
+    "COX6C": {
+        "referenceName": "8",
+        "start": 100885428,
+        "end": 100906290
+    },
+    "CREB1": {
+        "referenceName": "2",
+        "start": 208394461,
+        "end": 208468155
+    },
+    "CREB3L1": {
+        "referenceName": "11",
+        "start": 46299212,
+        "end": 46342261
+    },
+    "CREB3L2": {
+        "referenceName": "7",
+        "start": 137559725,
+        "end": 137686813
+    },
+    "CREBBP": {
+        "referenceName": "16",
+        "start": 3775055,
+        "end": 3930727
+    },
+    "CRLF2": {
+        "referenceName": "X",
+        "start": 1323075,
+        "end": 1331643
+    },
+    "CRTC1": {
+        "referenceName": "19",
+        "start": 18794487,
+        "end": 18893143
+    },
+    "CRTC3": {
+        "referenceName": "15",
+        "start": 91073157,
+        "end": 91188577
+    },
+    "CSF3R": {
+        "referenceName": "1",
+        "start": 36931644,
+        "end": 36948879
+    },
+    "CTNNB1": {
+        "referenceName": "3",
+        "start": 41236328,
+        "end": 41301587
+    },
+    "CUX1": {
+        "referenceName": "7",
+        "start": 101459184,
+        "end": 101912431
+    },
+    "CYLD": {
+        "referenceName": "16",
+        "start": 50775961,
+        "end": 50835846
+    },
+    "DAXX": {
+        "referenceName": "6",
+        "start": 33286335,
+        "end": 33297046
+    },
+    "DCTN1": {
+        "referenceName": "2",
+        "start": 74588281,
+        "end": 74619214
+    },
+    "DDB2": {
+        "referenceName": "11",
+        "start": 47236016,
+        "end": 47260791
+    },
+    "DDIT3": {
+        "referenceName": "12",
+        "start": 57910371,
+        "end": 57914300
+    },
+    "DDX10": {
+        "referenceName": "11",
+        "start": 108535752,
+        "end": 108811657
+    },
+    "DDX5": {
+        "referenceName": "HG183_PATCH",
+        "start": 62615709,
+        "end": 62621837
+    },
+    "DDX6": {
+        "referenceName": "HG122_PATCH",
+        "start": 118817269,
+        "end": 118653707
+    },
+    "DEK": {
+        "referenceName": "6",
+        "start": 18224099,
+        "end": 18265054
+    },
+    "DICER1": {
+        "referenceName": "14",
+        "start": 95552565,
+        "end": 95624347
+    },
+    "DNM2": {
+        "referenceName": "19",
+        "start": 10828755,
+        "end": 10944164
+    },
+    "DNMT3A": {
+        "referenceName": "2",
+        "start": 25450724,
+        "end": 25565459
+    },
+    "DUX4": {
+        "referenceName": "HG1032_PATCH",
+        "start": 191094929,
+        "end": 191107097
+    },
+    "EBF1": {
+        "referenceName": "5",
+        "start": 158122924,
+        "end": 158526769
+    },
+    "ECT2L": {
+        "referenceName": "6",
+        "start": 139117063,
+        "end": 139225207
+    },
+    "EGFR": {
+        "referenceName": "7",
+        "start": 55086714,
+        "end": 55324313
+    },
+    "EIF3E": {
+        "referenceName": "8",
+        "start": 109213445,
+        "end": 109447562
+    },
+    "EIF4A2": {
+        "referenceName": "3",
+        "start": 186500994,
+        "end": 186507689
+    },
+    "ELF4": {
+        "referenceName": "X",
+        "start": 129218919,
+        "end": 129244691
+    },
+    "ELK4": {
+        "referenceName": "1",
+        "start": 205566684,
+        "end": 205601090
+    },
+    "ELKS": {
+        "referenceName": "12",
+        "start": 1099675,
+        "end": 1605099
+    },
+    "ELL": {
+        "referenceName": "19",
+        "start": 18553473,
+        "end": 18632937
+    },
+    "ELN": {
+        "referenceName": "7",
+        "start": 73442119,
+        "end": 73484237
+    },
+    "EML4": {
+        "referenceName": "2",
+        "start": 42396490,
+        "end": 42559688
+    },
+    "EP300": {
+        "referenceName": "22",
+        "start": 41487790,
+        "end": 41576081
+    },
+    "EPS15": {
+        "referenceName": "1",
+        "start": 51819935,
+        "end": 51985000
+    },
+    "ERBB2": {
+        "referenceName": "17",
+        "start": 37844167,
+        "end": 37886679
+    },
+    "ERC1": {
+        "referenceName": "12",
+        "start": 1099675,
+        "end": 1605099
+    },
+    "ERCC2": {
+        "referenceName": "19",
+        "start": 45853095,
+        "end": 45874176
+    },
+    "ERCC3": {
+        "referenceName": "2",
+        "start": 128014866,
+        "end": 128051752
+    },
+    "ERCC4": {
+        "referenceName": "16",
+        "start": 14014014,
+        "end": 14046202
+    },
+    "ERCC5": {
+        "referenceName": "13",
+        "start": 103497194,
+        "end": 103528351
+    },
+    "ERG": {
+        "referenceName": "7",
+        "start": 150642049,
+        "end": 150675403
+    },
+    "ETNK1": {
+        "referenceName": "12",
+        "start": 22778009,
+        "end": 22843599
+    },
+    "ETV1": {
+        "referenceName": "7",
+        "start": 13930853,
+        "end": 14031050
+    },
+    "ETV4": {
+        "referenceName": "17",
+        "start": 41605212,
+        "end": 41656988
+    },
+    "ETV5": {
+        "referenceName": "3",
+        "start": 185764097,
+        "end": 185828107
+    },
+    "ETV6": {
+        "referenceName": "12",
+        "start": 11802788,
+        "end": 12048336
+    },
+    "EVI1": {
+        "referenceName": "17",
+        "start": 38710021,
+        "end": 38721724
+    },
+    "EWSR1": {
+        "referenceName": "22",
+        "start": 29663998,
+        "end": 29691523
+    },
+    "EXT1": {
+        "referenceName": "8",
+        "start": 118806729,
+        "end": 119124092
+    },
+    "EXT2": {
+        "referenceName": "11",
+        "start": 44117099,
+        "end": 44266979
+    },
+    "EZH2": {
+        "referenceName": "7",
+        "start": 148504475,
+        "end": 148581413
+    },
+    "EZR": {
+        "referenceName": "6",
+        "start": 159186773,
+        "end": 159240444
+    },
+    "FACL6": {
+        "referenceName": "5",
+        "start": 131142683,
+        "end": 131347936
+    },
+    "FAM131B": {
+        "referenceName": "7",
+        "start": 143050493,
+        "end": 143059863
+    },
+    "FAM46C": {
+        "referenceName": "1",
+        "start": 118148556,
+        "end": 118170994
+    },
+    "FANCA": {
+        "referenceName": "16",
+        "start": 89803957,
+        "end": 89883065
+    },
+    "FANCC": {
+        "referenceName": "9",
+        "start": 97861336,
+        "end": 98079991
+    },
+    "FANCD2": {
+        "referenceName": "3",
+        "start": 10068098,
+        "end": 10143614
+    },
+    "FANCE": {
+        "referenceName": "6",
+        "start": 35420138,
+        "end": 35434880
+    },
+    "FANCF": {
+        "referenceName": "11",
+        "start": 22644065,
+        "end": 22648333
+    },
+    "FANCG": {
+        "referenceName": "9",
+        "start": 35073832,
+        "end": 35080013
+    },
+    "FAS": {
+        "referenceName": "10",
+        "start": 90750288,
+        "end": 90775542
+    },
+    "FBXO11": {
+        "referenceName": "2",
+        "start": 48016455,
+        "end": 48132932
+    },
+    "FBXW7": {
+        "referenceName": "4",
+        "start": 153242411,
+        "end": 153457253
+    },
+    "FCGR2B": {
+        "referenceName": "1",
+        "start": 161551101,
+        "end": 161648444
+    },
+    "FEV": {
+        "referenceName": "2",
+        "start": 219845809,
+        "end": 219850379
+    },
+    "FGFR1": {
+        "referenceName": "8",
+        "start": 38268656,
+        "end": 38326352
+    },
+    "FGFR1OP": {
+        "referenceName": "6",
+        "start": 167412670,
+        "end": 167466201
+    },
+    "FGFR2": {
+        "referenceName": "10",
+        "start": 123237848,
+        "end": 123357972
+    },
+    "FGFR3": {
+        "referenceName": "4",
+        "start": 1795034,
+        "end": 1810599
+    },
+    "FGFR4": {
+        "referenceName": "5",
+        "start": 176513887,
+        "end": 176525145
+    },
+    "FH": {
+        "referenceName": "1",
+        "start": 196621008,
+        "end": 196716634
+    },
+    "FHIT": {
+        "referenceName": "3",
+        "start": 61169876,
+        "end": 61237133
+    },
+    "FIP1L1": {
+        "referenceName": "4",
+        "start": 54243810,
+        "end": 55161439
+    },
+    "FLI1": {
+        "referenceName": "11",
+        "start": 128556430,
+        "end": 128683162
+    },
+    "FLJ27352": {
+        "referenceName": "15",
+        "start": 55700746,
+        "end": 55710962
+    },
+    "FLT3": {
+        "referenceName": "13",
+        "start": 28577411,
+        "end": 28674729
+    },
+    "FNBP1": {
+        "referenceName": "9",
+        "start": 132649466,
+        "end": 132805473
+    },
+    "FOXA1": {
+        "referenceName": "14",
+        "start": 38059189,
+        "end": 38065264
+    },
+    "FOXL2": {
+        "referenceName": "3",
+        "start": 138663066,
+        "end": 138665982
+    },
+    "FOXO1A": {
+        "referenceName": "13",
+        "start": 41129804,
+        "end": 41240734
+    },
+    "FOXO3A": {
+        "referenceName": "6",
+        "start": 108881038,
+        "end": 109005977
+    },
+    "FOXO4": {
+        "referenceName": "X",
+        "start": 70316047,
+        "end": 70323385
+    },
+    "FOXP1": {
+        "referenceName": "3",
+        "start": 71003844,
+        "end": 71633140
+    },
+    "FSTL3": {
+        "referenceName": "19",
+        "start": 676365,
+        "end": 683390
+    },
+    "FUBP1": {
+        "referenceName": "1",
+        "start": 78430691,
+        "end": 78444794
+    },
+    "FUS": {
+        "referenceName": "16",
+        "start": 31191431,
+        "end": 31206192
+    },
+    "FVT1": {
+        "referenceName": "18",
+        "start": 60994959,
+        "end": 61034743
+    },
+    "GAS7": {
+        "referenceName": "17",
+        "start": 9813926,
+        "end": 10101868
+    },
+    "GATA1": {
+        "referenceName": "X",
+        "start": 48644962,
+        "end": 48649426
+    },
+    "GATA2": {
+        "referenceName": "3",
+        "start": 128198270,
+        "end": 128212028
+    },
+    "GATA3": {
+        "referenceName": "10",
+        "start": 8095567,
+        "end": 8117161
+    },
+    "GMPS": {
+        "referenceName": "3",
+        "start": 155588325,
+        "end": 155661815
+    },
+    "GNA11": {
+        "referenceName": "19",
+        "start": 3094408,
+        "end": 3124002
+    },
+    "GNAQ": {
+        "referenceName": "9",
+        "start": 80331003,
+        "end": 80646374
+    },
+    "GNAS": {
+        "referenceName": "20",
+        "start": 57414773,
+        "end": 57486247
+    },
+    "GOLGA5": {
+        "referenceName": "14",
+        "start": 93260576,
+        "end": 93306308
+    },
+    "GOPC": {
+        "referenceName": "6",
+        "start": 117639374,
+        "end": 117923705
+    },
+    "GPC3": {
+        "referenceName": "X",
+        "start": 132877300,
+        "end": 133119922
+    },
+    "GPHN": {
+        "referenceName": "14",
+        "start": 66974125,
+        "end": 67353716
+    },
+    "GRAF": {
+        "referenceName": "5",
+        "start": 142149949,
+        "end": 142608576
+    },
+    "GRIN2A": {
+        "referenceName": "16",
+        "start": 9847261,
+        "end": 10276611
+    },
+    "H3F3A": {
+        "referenceName": "1",
+        "start": 226249552,
+        "end": 226259702
+    },
+    "H3F3B": {
+        "referenceName": "1",
+        "start": 226249552,
+        "end": 226259702
+    },
+    "HCMOGT-1": {
+        "referenceName": "17",
+        "start": 19912657,
+        "end": 20222339
+    },
+    "HEAB": {
+        "referenceName": "11",
+        "start": 57416465,
+        "end": 57421142
+    },
+    "HERPUD1": {
+        "referenceName": "16",
+        "start": 56965960,
+        "end": 56978775
+    },
+    "HEY1": {
+        "referenceName": "8",
+        "start": 80676245,
+        "end": 80680098
+    },
+    "HIP1": {
+        "referenceName": "HG1257_PATCH",
+        "start": 75053212,
+        "end": 75155139
+    },
+    "HIST1H3B": {
+        "referenceName": "6",
+        "start": 26031878,
+        "end": 26032288
+    },
+    "HIST1H4I": {
+        "referenceName": "6",
+        "start": 27106367,
+        "end": 27107660
+    },
+    "HLA-A": {
+        "referenceName": "6",
+        "start": 29909037,
+        "end": 29913661
+    },
+    "HLF": {
+        "referenceName": "17",
+        "start": 53342373,
+        "end": 53402426
+    },
+    "HLXB9": {
+        "referenceName": "7",
+        "start": 156786745,
+        "end": 156803345
+    },
+    "HMGA1": {
+        "referenceName": "6",
+        "start": 34204650,
+        "end": 34214008
+    },
+    "HMGA2": {
+        "referenceName": "12",
+        "start": 66217911,
+        "end": 66360075
+    },
+    "HNRNPA2B1": {
+        "referenceName": "7",
+        "start": 26229547,
+        "end": 26241149
+    },
+    "HOOK3": {
+        "referenceName": "8",
+        "start": 42752075,
+        "end": 42885682
+    },
+    "HOXA11": {
+        "referenceName": "7",
+        "start": 27221129,
+        "end": 27224842
+    },
+    "HOXA13": {
+        "referenceName": "7",
+        "start": 27233122,
+        "end": 27239725
+    },
+    "HOXA9": {
+        "referenceName": "7",
+        "start": 27202054,
+        "end": 27214799
+    },
+    "HOXC11": {
+        "referenceName": "12",
+        "start": 54366910,
+        "end": 54371427
+    },
+    "HOXC13": {
+        "referenceName": "12",
+        "start": 54332549,
+        "end": 54340328
+    },
+    "HOXD11": {
+        "referenceName": "2",
+        "start": 176968944,
+        "end": 176974482
+    },
+    "HOXD13": {
+        "referenceName": "2",
+        "start": 176957619,
+        "end": 176960666
+    },
+    "HRAS": {
+        "referenceName": "11",
+        "start": 532242,
+        "end": 537287
+    },
+    "HSPCA": {
+        "referenceName": "11",
+        "start": 27910385,
+        "end": 27912580
+    },
+    "HSPCB": {
+        "referenceName": "6",
+        "start": 44213903,
+        "end": 44221625
+    },
+    "IDH1": {
+        "referenceName": "2",
+        "start": 209100951,
+        "end": 209130798
+    },
+    "IDH2": {
+        "referenceName": "15",
+        "start": 90626277,
+        "end": 90645736
+    },
+    "IKBKB": {
+        "referenceName": "8",
+        "start": 42128820,
+        "end": 42190171
+    },
+    "IKZF1": {
+        "referenceName": "7",
+        "start": 50343720,
+        "end": 50370631
+    },
+    "IL2": {
+        "referenceName": "4",
+        "start": 123372625,
+        "end": 123377880
+    },
+    "IL21R": {
+        "referenceName": "16",
+        "start": 27413483,
+        "end": 27463363
+    },
+    "IL6ST": {
+        "referenceName": "5",
+        "start": 55230923,
+        "end": 55290821
+    },
+    "IL7R": {
+        "referenceName": "5",
+        "start": 35852797,
+        "end": 35879705
+    },
+    "IRF4": {
+        "referenceName": "6",
+        "start": 391739,
+        "end": 411447
+    },
+    "IRTA1": {
+        "referenceName": "1",
+        "start": 157543539,
+        "end": 157567870
+    },
+    "ITK": {
+        "referenceName": "5",
+        "start": 156569944,
+        "end": 156644777
+    },
+    "JAK1": {
+        "referenceName": "1",
+        "start": 65298912,
+        "end": 65432187
+    },
+    "JAK2": {
+        "referenceName": "9",
+        "start": 4985033,
+        "end": 5128183
+    },
+    "JAK3": {
+        "referenceName": "19",
+        "start": 17935589,
+        "end": 17958880
+    },
+    "JAZF1": {
+        "referenceName": "7",
+        "start": 27870192,
+        "end": 28220362
+    },
+    "JUN": {
+        "referenceName": "1",
+        "start": 59246460,
+        "end": 59249999
+    },
+    "KCNJ5": {
+        "referenceName": "11",
+        "start": 128761251,
+        "end": 128790930
+    },
+    "KDM5A": {
+        "referenceName": "12",
+        "start": 389295,
+        "end": 498620
+    },
+    "KDM5C": {
+        "referenceName": "HG1433_PATCH",
+        "start": 52934321,
+        "end": 52968422
+    },
+    "KDM6A": {
+        "referenceName": "X",
+        "start": 44732423,
+        "end": 44764380
+    },
+    "KDR": {
+        "referenceName": "4",
+        "start": 55944644,
+        "end": 55991756
+    },
+    "KIAA1549": {
+        "referenceName": "7",
+        "start": 138535823,
+        "end": 138666064
+    },
+    "KIAA1598": {
+        "referenceName": "10",
+        "start": 118640993,
+        "end": 118886097
+    },
+    "KIF5B": {
+        "referenceName": "10",
+        "start": 32297938,
+        "end": 32345359
+    },
+    "KIT": {
+        "referenceName": "4",
+        "start": 55524085,
+        "end": 55526180
+    },
+    "KLF4": {
+        "referenceName": "9",
+        "start": 110247133,
+        "end": 110252763
+    },
+    "KLK2": {
+        "referenceName": "19",
+        "start": 51364824,
+        "end": 51383823
+    },
+    "KMT2D": {
+        "referenceName": "12",
+        "start": 49412758,
+        "end": 49453557
+    },
+    "KRAS": {
+        "referenceName": "12",
+        "start": 25357723,
+        "end": 25403870
+    },
+    "KTN1": {
+        "referenceName": "14",
+        "start": 56025790,
+        "end": 56168244
+    },
+    "LAF4": {
+        "referenceName": "2",
+        "start": 100161881,
+        "end": 100759201
+    },
+    "LASP1": {
+        "referenceName": "17",
+        "start": 37026112,
+        "end": 37078023
+    },
+    "LCK": {
+        "referenceName": "1",
+        "start": 32716840,
+        "end": 32751766
+    },
+    "LCP1": {
+        "referenceName": "14",
+        "start": 21944756,
+        "end": 21964193
+    },
+    "LCX": {
+        "referenceName": "10",
+        "start": 70320413,
+        "end": 70454239
+    },
+    "LHFP": {
+        "referenceName": "13",
+        "start": 39917029,
+        "end": 40177665
+    },
+    "LIFR": {
+        "referenceName": "5",
+        "start": 38475065,
+        "end": 38608456
+    },
+    "LMNA": {
+        "referenceName": "1",
+        "start": 156052364,
+        "end": 156109880
+    },
+    "LMO1": {
+        "referenceName": "11",
+        "start": 8245851,
+        "end": 8290263
+    },
+    "LMO2": {
+        "referenceName": "11",
+        "start": 33908436,
+        "end": 33913836
+    },
+    "LPP": {
+        "referenceName": "3",
+        "start": 187871072,
+        "end": 188602082
+    },
+    "LRIG3": {
+        "referenceName": "12",
+        "start": 59286720,
+        "end": 59314303
+    },
+    "LSM14A": {
+        "referenceName": "19",
+        "start": 34663409,
+        "end": 34720420
+    },
+    "LYL1": {
+        "referenceName": "19",
+        "start": 13209847,
+        "end": 13213975
+    },
+    "MAF": {
+        "referenceName": "16",
+        "start": 79619740,
+        "end": 79634611
+    },
+    "MAFB": {
+        "referenceName": "20",
+        "start": 39314488,
+        "end": 39317880
+    },
+    "MALAT1": {
+        "referenceName": "11",
+        "start": 65270385,
+        "end": 65270479
+    },
+    "MALT1": {
+        "referenceName": "18",
+        "start": 56338618,
+        "end": 56421709
+    },
+    "MAML2": {
+        "referenceName": "11",
+        "start": 95751764,
+        "end": 96076344
+    },
+    "MAP2K1": {
+        "referenceName": "15",
+        "start": 66679155,
+        "end": 66784650
+    },
+    "MAP2K2": {
+        "referenceName": "19",
+        "start": 4122687,
+        "end": 4124126
+    },
+    "MAP2K4": {
+        "referenceName": "17",
+        "start": 11924141,
+        "end": 12047147
+    },
+    "MAP3K1": {
+        "referenceName": "5",
+        "start": 56111401,
+        "end": 56191979
+    },
+    "MAP3K13": {
+        "referenceName": "3",
+        "start": 185000729,
+        "end": 185206885
+    },
+    "MAX": {
+        "referenceName": "14",
+        "start": 65472892,
+        "end": 65569413
+    },
+    "MDM2": {
+        "referenceName": "12",
+        "start": 69201952,
+        "end": 69244466
+    },
+    "MDM4": {
+        "referenceName": "1",
+        "start": 204485507,
+        "end": 204527248
+    },
+    "MDS1": {
+        "referenceName": "3",
+        "start": 168801287,
+        "end": 169381406
+    },
+    "MDS2": {
+        "referenceName": "1",
+        "start": 23907985,
+        "end": 23967058
+    },
+    "MECT1": {
+        "referenceName": "19",
+        "start": 18794487,
+        "end": 18893143
+    },
+    "MED12": {
+        "referenceName": "X",
+        "start": 70338406,
+        "end": 70362304
+    },
+    "MEN1": {
+        "referenceName": "11",
+        "start": 64570982,
+        "end": 64578766
+    },
+    "MET": {
+        "referenceName": "7",
+        "start": 116312444,
+        "end": 116438440
+    },
+    "MITF": {
+        "referenceName": "3",
+        "start": 69788586,
+        "end": 70017488
+    },
+    "MKL1": {
+        "referenceName": "22",
+        "start": 40806285,
+        "end": 41032706
+    },
+    "MLF1": {
+        "referenceName": "3",
+        "start": 158288952,
+        "end": 158325041
+    },
+    "MLH1": {
+        "referenceName": "3",
+        "start": 37034823,
+        "end": 37092409
+    },
+    "MLL": {
+        "referenceName": "11",
+        "start": 95751764,
+        "end": 96076344
+    },
+    "MLL3": {
+        "referenceName": "7",
+        "start": 151832007,
+        "end": 152133090
+    },
+    "MLLT1": {
+        "referenceName": "19",
+        "start": 6210390,
+        "end": 6279959
+    },
+    "MLLT10": {
+        "referenceName": "10",
+        "start": 21823094,
+        "end": 22032559
+    },
+    "MLLT2": {
+        "referenceName": "4",
+        "start": 87856154,
+        "end": 88062206
+    },
+    "MLLT3": {
+        "referenceName": "9",
+        "start": 20537028,
+        "end": 20622542
+    },
+    "MLLT4": {
+        "referenceName": "6",
+        "start": 168227602,
+        "end": 168372703
+    },
+    "MLLT7": {
+        "referenceName": "X",
+        "start": 70316047,
+        "end": 70323385
+    },
+    "MN1": {
+        "referenceName": "22",
+        "start": 28144265,
+        "end": 28197486
+    },
+    "MPL": {
+        "referenceName": "1",
+        "start": 43803478,
+        "end": 43818443
+    },
+    "MSF": {
+        "referenceName": "1",
+        "start": 186265411,
+        "end": 186283694
+    },
+    "MSH2": {
+        "referenceName": "2",
+        "start": 47630108,
+        "end": 47789450
+    },
+    "MSH6": {
+        "referenceName": "2",
+        "start": 47922669,
+        "end": 48037240
+    },
+    "MSI2": {
+        "referenceName": "17",
+        "start": 55333212,
+        "end": 55762046
+    },
+    "MSN": {
+        "referenceName": "X",
+        "start": 64808257,
+        "end": 64832434
+    },
+    "MTCP1": {
+        "referenceName": "X",
+        "start": 154289897,
+        "end": 154299637
+    },
+    "MUC1": {
+        "referenceName": "1",
+        "start": 155161843,
+        "end": 155162707
+    },
+    "MUTYH": {
+        "referenceName": "1",
+        "start": 45794835,
+        "end": 45806142
+    },
+    "MYB": {
+        "referenceName": "6",
+        "start": 135502453,
+        "end": 135540311
+    },
+    "MYC": {
+        "referenceName": "8",
+        "start": 128747680,
+        "end": 128753680
+    },
+    "MYCL1": {
+        "referenceName": "1",
+        "start": 40361098,
+        "end": 40367928
+    },
+    "MYCN": {
+        "referenceName": "2",
+        "start": 16080686,
+        "end": 16087129
+    },
+    "MYD88": {
+        "referenceName": "3",
+        "start": 38179969,
+        "end": 38184513
+    },
+    "MYH11": {
+        "referenceName": "16",
+        "start": 15796992,
+        "end": 15950890
+    },
+    "MYH9": {
+        "referenceName": "22",
+        "start": 36705144,
+        "end": 36784063
+    },
+    "MYO5A": {
+        "referenceName": "15",
+        "start": 52599480,
+        "end": 52821247
+    },
+    "MYOD1": {
+        "referenceName": "11",
+        "start": 17741115,
+        "end": 17743678
+    },
+    "MYST4": {
+        "referenceName": "10",
+        "start": 76585340,
+        "end": 76792380
+    },
+    "NAB2": {
+        "referenceName": "12",
+        "start": 57482677,
+        "end": 57489259
+    },
+    "NACA": {
+        "referenceName": "12",
+        "start": 57106212,
+        "end": 57125412
+    },
+    "NBS1": {
+        "referenceName": "19",
+        "start": 55464498,
+        "end": 55512510
+    },
+    "NCOA1": {
+        "referenceName": "2",
+        "start": 24714783,
+        "end": 24993571
+    },
+    "NCOA2": {
+        "referenceName": "8",
+        "start": 71021997,
+        "end": 71316040
+    },
+    "NCOA4": {
+        "referenceName": "HG1211_PATCH",
+        "start": 46500536,
+        "end": 46526162
+    },
+    "NCOR1": {
+        "referenceName": "17",
+        "start": 15932471,
+        "end": 16121499
+    },
+    "NDRG1": {
+        "referenceName": "8",
+        "start": 134249414,
+        "end": 134314265
+    },
+    "NF1": {
+        "referenceName": "17",
+        "start": 29421945,
+        "end": 29709134
+    },
+    "NF2": {
+        "referenceName": "22",
+        "start": 29999545,
+        "end": 30094587
+    },
+    "NFATC2": {
+        "referenceName": "20",
+        "start": 50114687,
+        "end": 50179370
+    },
+    "NFE2L2": {
+        "referenceName": "2",
+        "start": 178092323,
+        "end": 178257425
+    },
+    "NFIB": {
+        "referenceName": "9",
+        "start": 14081842,
+        "end": 14398982
+    },
+    "NFKB2": {
+        "referenceName": "10",
+        "start": 104153867,
+        "end": 104162286
+    },
+    "NFKBIE": {
+        "referenceName": "6",
+        "start": 44225903,
+        "end": 44233525
+    },
+    "NIN": {
+        "referenceName": "14",
+        "start": 51186481,
+        "end": 51297839
+    },
+    "NKX2-1": {
+        "referenceName": "14",
+        "start": 36985597,
+        "end": 36990354
+    },
+    "NONO": {
+        "referenceName": "X",
+        "start": 70503042,
+        "end": 70521018
+    },
+    "NOTCH1": {
+        "referenceName": "9",
+        "start": 139388896,
+        "end": 139440314
+    },
+    "NOTCH2": {
+        "referenceName": "1",
+        "start": 120593889,
+        "end": 120612240
+    },
+    "NPM1": {
+        "referenceName": "5",
+        "start": 170814120,
+        "end": 170838141
+    },
+    "NR4A3": {
+        "referenceName": "9",
+        "start": 102584137,
+        "end": 102629173
+    },
+    "NRAS": {
+        "referenceName": "1",
+        "start": 115247090,
+        "end": 115259515
+    },
+    "NRG1": {
+        "referenceName": "8",
+        "start": 31496902,
+        "end": 32381968
+    },
+    "NSD1": {
+        "referenceName": "5",
+        "start": 176560026,
+        "end": 176727216
+    },
+    "NT5C2": {
+        "referenceName": "10",
+        "start": 104847774,
+        "end": 104953063
+    },
+    "NTRK1": {
+        "referenceName": "1",
+        "start": 156785432,
+        "end": 156851642
+    },
+    "NTRK3": {
+        "referenceName": "15",
+        "start": 88402982,
+        "end": 88799999
+    },
+    "NUMA1": {
+        "referenceName": "11",
+        "start": 71713910,
+        "end": 71791739
+    },
+    "NUP214": {
+        "referenceName": "9",
+        "start": 134000948,
+        "end": 134110057
+    },
+    "NUP98": {
+        "referenceName": "11",
+        "start": 3692313,
+        "end": 3819022
+    },
+    "NUTM2A": {
+        "referenceName": "10",
+        "start": 88985205,
+        "end": 88996665
+    },
+    "NUTM2B": {
+        "referenceName": "10",
+        "start": 81462983,
+        "end": 81474437
+    },
+    "OLIG2": {
+        "referenceName": "21",
+        "start": 34398153,
+        "end": 34401504
+    },
+    "OMD": {
+        "referenceName": "9",
+        "start": 95176527,
+        "end": 95186743
+    },
+    "P2RY8": {
+        "referenceName": "X",
+        "start": 1323075,
+        "end": 1331643
+    },
+    "PAFAH1B2": {
+        "referenceName": "11",
+        "start": 117014983,
+        "end": 117047610
+    },
+    "PALB2": {
+        "referenceName": "16",
+        "start": 23614481,
+        "end": 23652631
+    },
+    "PAX3": {
+        "referenceName": "2",
+        "start": 223064607,
+        "end": 223163715
+    },
+    "PAX5": {
+        "referenceName": "9",
+        "start": 36833272,
+        "end": 37034182
+    },
+    "PAX7": {
+        "referenceName": "1",
+        "start": 18957500,
+        "end": 19075360
+    },
+    "PAX8": {
+        "referenceName": "2",
+        "start": 113973574,
+        "end": 114036527
+    },
+    "PBRM1": {
+        "referenceName": "3",
+        "start": 52579368,
+        "end": 52719933
+    },
+    "PBX1": {
+        "referenceName": "1",
+        "start": 164524821,
+        "end": 164868533
+    },
+    "PCM1": {
+        "referenceName": "8",
+        "start": 17780349,
+        "end": 17887453
+    },
+    "PCSK7": {
+        "referenceName": "11",
+        "start": 117075053,
+        "end": 117103241
+    },
+    "PDE4DIP": {
+        "referenceName": "1",
+        "start": 145066005,
+        "end": 145066847
+    },
+    "PDGFB": {
+        "referenceName": "22",
+        "start": 39619364,
+        "end": 39640756
+    },
+    "PDGFRA": {
+        "referenceName": "4",
+        "start": 55095264,
+        "end": 55164414
+    },
+    "PDGFRB": {
+        "referenceName": "5",
+        "start": 149493400,
+        "end": 149535435
+    },
+    "PER1": {
+        "referenceName": "17",
+        "start": 8043790,
+        "end": 8059824
+    },
+    "PHF6": {
+        "referenceName": "X",
+        "start": 133507283,
+        "end": 133562821
+    },
+    "PHOX2B": {
+        "referenceName": "4",
+        "start": 41746099,
+        "end": 41750987
+    },
+    "PICALM": {
+        "referenceName": "11",
+        "start": 85735318,
+        "end": 85780924
+    },
+    "PIK3CA": {
+        "referenceName": "3",
+        "start": 178865902,
+        "end": 178957881
+    },
+    "PIK3R1": {
+        "referenceName": "5",
+        "start": 67511548,
+        "end": 67597649
+    },
+    "PIM1": {
+        "referenceName": "19",
+        "start": 5691845,
+        "end": 5720583
+    },
+    "PLAG1": {
+        "referenceName": "8",
+        "start": 57073463,
+        "end": 57123883
+    },
+    "PLCG1": {
+        "referenceName": "20",
+        "start": 39765600,
+        "end": 39825441
+    },
+    "PML": {
+        "referenceName": "15",
+        "start": 74287014,
+        "end": 74340153
+    },
+    "PMS1": {
+        "referenceName": "2",
+        "start": 190648811,
+        "end": 190742355
+    },
+    "PMS2": {
+        "referenceName": "7",
+        "start": 6012870,
+        "end": 6048756
+    },
+    "PMX1": {
+        "referenceName": "1",
+        "start": 170631869,
+        "end": 170708560
+    },
+    "PNUTL1": {
+        "referenceName": "22",
+        "start": 19701987,
+        "end": 19712295
+    },
+    "POLE": {
+        "referenceName": "12",
+        "start": 133200339,
+        "end": 133263951
+    },
+    "POT1": {
+        "referenceName": "7",
+        "start": 124462440,
+        "end": 124570037
+    },
+    "POU2AF1": {
+        "referenceName": "11",
+        "start": 111222977,
+        "end": 111326355
+    },
+    "POU5F1": {
+        "referenceName": "6",
+        "start": 31132114,
+        "end": 31148508
+    },
+    "PPARG": {
+        "referenceName": "3",
+        "start": 12328867,
+        "end": 12475855
+    },
+    "PPFIBP1": {
+        "referenceName": "12",
+        "start": 27676364,
+        "end": 27848497
+    },
+    "PPP2R1A": {
+        "referenceName": "19",
+        "start": 52693292,
+        "end": 52732786
+    },
+    "PPP6C": {
+        "referenceName": "9",
+        "start": 127908852,
+        "end": 127952218
+    },
+    "PRCC": {
+        "referenceName": "1",
+        "start": 156720402,
+        "end": 156770609
+    },
+    "PRDM1": {
+        "referenceName": "6",
+        "start": 106534195,
+        "end": 106557814
+    },
+    "PRDM16": {
+        "referenceName": "1",
+        "start": 2985732,
+        "end": 3355185
+    },
+    "PRF1": {
+        "referenceName": "8",
+        "start": 28203102,
+        "end": 28260218
+    },
+    "PRKAR1A": {
+        "referenceName": "17",
+        "start": 66507921,
+        "end": 66547460
+    },
+    "PSIP1": {
+        "referenceName": "9",
+        "start": 15464064,
+        "end": 15511017
+    },
+    "PTCH1": {
+        "referenceName": "9",
+        "start": 98205262,
+        "end": 98279339
+    },
+    "PTEN": {
+        "referenceName": "10",
+        "start": 89622870,
+        "end": 89731687
+    },
+    "PTPN11": {
+        "referenceName": "12",
+        "start": 112856155,
+        "end": 112947717
+    },
+    "PTPRB": {
+        "referenceName": "12",
+        "start": 70909646,
+        "end": 71031220
+    },
+    "PTPRC": {
+        "referenceName": "1",
+        "start": 198607801,
+        "end": 198614178
+    },
+    "PTPRK": {
+        "referenceName": "6",
+        "start": 128289924,
+        "end": 128841819
+    },
+    "PWWP2A": {
+        "referenceName": "5",
+        "start": 159488808,
+        "end": 159546430
+    },
+    "RAB5EP": {
+        "referenceName": "17",
+        "start": 5185560,
+        "end": 5286877
+    },
+    "RAC1": {
+        "referenceName": "14",
+        "start": 21269387,
+        "end": 21271437
+    },
+    "RAD21": {
+        "referenceName": "8",
+        "start": 117858174,
+        "end": 117887105
+    },
+    "RAD51L1": {
+        "referenceName": "14",
+        "start": 68286496,
+        "end": 69196935
+    },
+    "RAF1": {
+        "referenceName": "3",
+        "start": 12625100,
+        "end": 12705725
+    },
+    "RALGDS": {
+        "referenceName": "9",
+        "start": 135973107,
+        "end": 136024721
+    },
+    "RANBP17": {
+        "referenceName": "5",
+        "start": 170288874,
+        "end": 170727019
+    },
+    "RANBP2": {
+        "referenceName": "2",
+        "start": 109335937,
+        "end": 109402267
+    },
+    "RAP1GDS1": {
+        "referenceName": "4",
+        "start": 99182535,
+        "end": 99365012
+    },
+    "RARA": {
+        "referenceName": "17",
+        "start": 38465444,
+        "end": 38513895
+    },
+    "RB1": {
+        "referenceName": "13",
+        "start": 48877887,
+        "end": 49056122
+    },
+    "RBM15": {
+        "referenceName": "1",
+        "start": 110881128,
+        "end": 110889303
+    },
+    "RECQL4": {
+        "referenceName": "8",
+        "start": 145738769,
+        "end": 145743229
+    },
+    "REL": {
+        "referenceName": "2",
+        "start": 61108656,
+        "end": 61158745
+    },
+    "RET": {
+        "referenceName": "10",
+        "start": 43572475,
+        "end": 43625799
+    },
+    "RHOA": {
+        "referenceName": "3",
+        "start": 49396578,
+        "end": 49450431
+    },
+    "RNF43": {
+        "referenceName": "17",
+        "start": 56429861,
+        "end": 56494956
+    },
+    "ROS1": {
+        "referenceName": "6",
+        "start": 117609463,
+        "end": 117747018
+    },
+    "RPL10": {
+        "referenceName": "3",
+        "start": 23958036,
+        "end": 23965183
+    },
+    "RPL22": {
+        "referenceName": "1",
+        "start": 6241329,
+        "end": 6269449
+    },
+    "RPL5": {
+        "referenceName": "1",
+        "start": 93297582,
+        "end": 93307481
+    },
+    "RPN1": {
+        "referenceName": "3",
+        "start": 184016497,
+        "end": 184026842
+    },
+    "RSPO2": {
+        "referenceName": "8",
+        "start": 108911544,
+        "end": 109095876
+    },
+    "RSPO3": {
+        "referenceName": "6",
+        "start": 127439749,
+        "end": 127518910
+    },
+    "RUNDC2A": {
+        "referenceName": "16",
+        "start": 12070594,
+        "end": 12668146
+    },
+    "RUNX1": {
+        "referenceName": "21",
+        "start": 36917805,
+        "end": 37376965
+    },
+    "RUNXBP2": {
+        "referenceName": "8",
+        "start": 41786997,
+        "end": 41909508
+    },
+    "SBDS": {
+        "referenceName": "7",
+        "start": 66452664,
+        "end": 66460588
+    },
+    "SDC4": {
+        "referenceName": "20",
+        "start": 43953928,
+        "end": 43977064
+    },
+    "SDH5": {
+        "referenceName": "11",
+        "start": 61197514,
+        "end": 61215001
+    },
+    "SDHB": {
+        "referenceName": "1",
+        "start": 17345217,
+        "end": 17380665
+    },
+    "SDHC": {
+        "referenceName": "1",
+        "start": 161284047,
+        "end": 161345130
+    },
+    "SDHD": {
+        "referenceName": "11",
+        "start": 111957497,
+        "end": 111984610
+    },
+    "SEPT6": {
+        "referenceName": "X",
+        "start": 118749687,
+        "end": 118827333
+    },
+    "SET": {
+        "referenceName": "9",
+        "start": 131445703,
+        "end": 131458679
+    },
+    "SETBP1": {
+        "referenceName": "18",
+        "start": 42260138,
+        "end": 42648475
+    },
+    "SETD2": {
+        "referenceName": "3",
+        "start": 47057919,
+        "end": 47205457
+    },
+    "SF3B1": {
+        "referenceName": "2",
+        "start": 198254508,
+        "end": 198299815
+    },
+    "SFPQ": {
+        "referenceName": "1",
+        "start": 35641979,
+        "end": 35658749
+    },
+    "SFRS3": {
+        "referenceName": "6",
+        "start": 36562130,
+        "end": 36573377
+    },
+    "SH2B3": {
+        "referenceName": "12",
+        "start": 111843752,
+        "end": 111889427
+    },
+    "SH3GL1": {
+        "referenceName": "19",
+        "start": 4360367,
+        "end": 4400544
+    },
+    "SIL": {
+        "referenceName": "1",
+        "start": 47715811,
+        "end": 47779819
+    },
+    "SLC34A2": {
+        "referenceName": "4",
+        "start": 25656923,
+        "end": 25680370
+    },
+    "SLC45A3": {
+        "referenceName": "1",
+        "start": 205626979,
+        "end": 205649587
+    },
+    "SMAD4": {
+        "referenceName": "18",
+        "start": 48554764,
+        "end": 48611415
+    },
+    "SMARCA4": {
+        "referenceName": "19",
+        "start": 11071677,
+        "end": 11176071
+    },
+    "SMARCB1": {
+        "referenceName": "22",
+        "start": 24129150,
+        "end": 24176703
+    },
+    "SMARCD1": {
+        "referenceName": "12",
+        "start": 50478755,
+        "end": 50494495
+    },
+    "SMARCE1": {
+        "referenceName": "17",
+        "start": 38781214,
+        "end": 38804760
+    },
+    "SMO": {
+        "referenceName": "7",
+        "start": 128828713,
+        "end": 128853386
+    },
+    "SND1": {
+        "referenceName": "7",
+        "start": 127292234,
+        "end": 127461647
+    },
+    "SOCS1": {
+        "referenceName": "16",
+        "start": 11348262,
+        "end": 11350036
+    },
+    "SOX2": {
+        "referenceName": "3",
+        "start": 181429712,
+        "end": 181432224
+    },
+    "SPEN": {
+        "referenceName": "1",
+        "start": 110881128,
+        "end": 110889303
+    },
+    "SPOP": {
+        "referenceName": "17",
+        "start": 47676246,
+        "end": 47755596
+    },
+    "SRGAP3": {
+        "referenceName": "3",
+        "start": 9022275,
+        "end": 9404737
+    },
+    "SRSF2": {
+        "referenceName": "17",
+        "start": 74730197,
+        "end": 74733456
+    },
+    "SS18": {
+        "referenceName": "18",
+        "start": 23596217,
+        "end": 23671181
+    },
+    "SS18L1": {
+        "referenceName": "20",
+        "start": 60718851,
+        "end": 60757540
+    },
+    "SSX1": {
+        "referenceName": "HG1436_HG1432_PATCH",
+        "start": 48114716,
+        "end": 48126843
+    },
+    "SSX2": {
+        "referenceName": "X",
+        "start": 52781573,
+        "end": 52788692
+    },
+    "SSX4": {
+        "referenceName": "X",
+        "start": 48242957,
+        "end": 48248983
+    },
+    "STAG2": {
+        "referenceName": "X",
+        "start": 123094062,
+        "end": 123556514
+    },
+    "STAT3": {
+        "referenceName": "17",
+        "start": 40465342,
+        "end": 40540586
+    },
+    "STAT5B": {
+        "referenceName": "17",
+        "start": 40351186,
+        "end": 40428725
+    },
+    "STAT6": {
+        "referenceName": "12",
+        "start": 57489191,
+        "end": 57525922
+    },
+    "STK11": {
+        "referenceName": "19",
+        "start": 1177557,
+        "end": 1228434
+    },
+    "STL": {
+        "referenceName": "6",
+        "start": 125230239,
+        "end": 125284185
+    },
+    "STRN": {
+        "referenceName": "2",
+        "start": 37070783,
+        "end": 37193615
+    },
+    "SUFU": {
+        "referenceName": "10",
+        "start": 104263744,
+        "end": 104393292
+    },
+    "SUZ12": {
+        "referenceName": "17",
+        "start": 30264037,
+        "end": 30328064
+    },
+    "SYK": {
+        "referenceName": "9",
+        "start": 93564069,
+        "end": 93660831
+    },
+    "TAF15": {
+        "referenceName": "1",
+        "start": 28915835,
+        "end": 28969597
+    },
+    "TAL1": {
+        "referenceName": "1",
+        "start": 47681962,
+        "end": 47697892
+    },
+    "TAL2": {
+        "referenceName": "9",
+        "start": 108424738,
+        "end": 108425393
+    },
+    "TBL1XR1": {
+        "referenceName": "3",
+        "start": 176737143,
+        "end": 176915184
+    },
+    "TBX3": {
+        "referenceName": "12",
+        "start": 115108059,
+        "end": 115121969
+    },
+    "TCEA1": {
+        "referenceName": "8",
+        "start": 54879112,
+        "end": 54935089
+    },
+    "TCF1": {
+        "referenceName": "12",
+        "start": 121416346,
+        "end": 121440315
+    },
+    "TCF12": {
+        "referenceName": "15",
+        "start": 57210821,
+        "end": 57591479
+    },
+    "TCF3": {
+        "referenceName": "2",
+        "start": 85360533,
+        "end": 85537511
+    },
+    "TCF7L2": {
+        "referenceName": "10",
+        "start": 114710009,
+        "end": 114927437
+    },
+    "TCL1A": {
+        "referenceName": "14",
+        "start": 96176304,
+        "end": 96180533
+    },
+    "TCL6": {
+        "referenceName": "14",
+        "start": 96116835,
+        "end": 96146170
+    },
+    "TERT": {
+        "referenceName": "5",
+        "start": 1253262,
+        "end": 1295184
+    },
+    "TET2": {
+        "referenceName": "4",
+        "start": 106067032,
+        "end": 106200973
+    },
+    "TFE3": {
+        "referenceName": "X",
+        "start": 48899553,
+        "end": 48901012
+    },
+    "TFEB": {
+        "referenceName": "6",
+        "start": 41651716,
+        "end": 41703997
+    },
+    "TFG": {
+        "referenceName": "3",
+        "start": 100428175,
+        "end": 100467810
+    },
+    "TFPT": {
+        "referenceName": "19",
+        "start": 54616502,
+        "end": 54619055
+    },
+    "TFRC": {
+        "referenceName": "3",
+        "start": 195754054,
+        "end": 195809060
+    },
+    "THRAP3": {
+        "referenceName": "1",
+        "start": 36690017,
+        "end": 36770958
+    },
+    "TIF1": {
+        "referenceName": "7",
+        "start": 138145079,
+        "end": 138274738
+    },
+    "TLX1": {
+        "referenceName": "10",
+        "start": 102890262,
+        "end": 102897546
+    },
+    "TLX3": {
+        "referenceName": "5",
+        "start": 170736288,
+        "end": 170739138
+    },
+    "TMPRSS2": {
+        "referenceName": "21",
+        "start": 42836478,
+        "end": 42903043
+    },
+    "TNFAIP3": {
+        "referenceName": "6",
+        "start": 138188325,
+        "end": 138204449
+    },
+    "TNFRSF14": {
+        "referenceName": "1",
+        "start": 2487078,
+        "end": 2496821
+    },
+    "TNFRSF17": {
+        "referenceName": "16",
+        "start": 12058964,
+        "end": 12061925
+    },
+    "TOP1": {
+        "referenceName": "20",
+        "start": 39657458,
+        "end": 39753127
+    },
+    "TP53": {
+        "referenceName": "17",
+        "start": 7565097,
+        "end": 7590868
+    },
+    "TPM3": {
+        "referenceName": "1",
+        "start": 154127780,
+        "end": 154167124
+    },
+    "TPM4": {
+        "referenceName": "19",
+        "start": 16177831,
+        "end": 16213815
+    },
+    "TPR": {
+        "referenceName": "1",
+        "start": 186280784,
+        "end": 186344825
+    },
+    "TRAF7": {
+        "referenceName": "16",
+        "start": 2205699,
+        "end": 2228130
+    },
+    "TRIM27": {
+        "referenceName": "6",
+        "start": 28870779,
+        "end": 28891766
+    },
+    "TRIM33": {
+        "referenceName": "1",
+        "start": 115048624,
+        "end": 115053781
+    },
+    "TRIP11": {
+        "referenceName": "14",
+        "start": 92432335,
+        "end": 92507240
+    },
+    "TRRAP": {
+        "referenceName": "7",
+        "start": 98475556,
+        "end": 98610866
+    },
+    "TSC1": {
+        "referenceName": "9",
+        "start": 135766735,
+        "end": 135820020
+    },
+    "TSC2": {
+        "referenceName": "16",
+        "start": 2097466,
+        "end": 2138721
+    },
+    "TSHR": {
+        "referenceName": "14",
+        "start": 81421333,
+        "end": 81612646
+    },
+    "TTL": {
+        "referenceName": "13",
+        "start": 41025071,
+        "end": 41109944
+    },
+    "U2AF1": {
+        "referenceName": "21",
+        "start": 44513066,
+        "end": 44527697
+    },
+    "UBR5": {
+        "referenceName": "8",
+        "start": 103265240,
+        "end": 103425069
+    },
+    "USP6": {
+        "referenceName": "17",
+        "start": 5019733,
+        "end": 5078329
+    },
+    "VHL": {
+        "referenceName": "3",
+        "start": 10182692,
+        "end": 10193904
+    },
+    "VTI1A": {
+        "referenceName": "10",
+        "start": 114206756,
+        "end": 114211959
+    },
+    "WAS": {
+        "referenceName": "HG1436_HG1432_PATCH",
+        "start": 48535995,
+        "end": 48550826
+    },
+    "WHSC1": {
+        "referenceName": "4",
+        "start": 1873151,
+        "end": 1983934
+    },
+    "WHSC1L1": {
+        "referenceName": "8",
+        "start": 38127215,
+        "end": 38239790
+    },
+    "WIF1": {
+        "referenceName": "12",
+        "start": 65444406,
+        "end": 65515346
+    },
+    "WRN": {
+        "referenceName": "8",
+        "start": 30891317,
+        "end": 31031285
+    },
+    "WT1": {
+        "referenceName": "11",
+        "start": 32409321,
+        "end": 32457176
+    },
+    "WWTR1": {
+        "referenceName": "3",
+        "start": 149235022,
+        "end": 149454501
+    },
+    "XPA": {
+        "referenceName": "9",
+        "start": 100437191,
+        "end": 100459639
+    },
+    "XPC": {
+        "referenceName": "3",
+        "start": 14186647,
+        "end": 14220283
+    },
+    "XPO1": {
+        "referenceName": "2",
+        "start": 61704984,
+        "end": 61765761
+    },
+    "YWHAE": {
+        "referenceName": "17",
+        "start": 1247566,
+        "end": 1303672
+    },
+    "ZCCHC8": {
+        "referenceName": "12",
+        "start": 122956147,
+        "end": 122985142
+    },
+    "ZNF198": {
+        "referenceName": "13",
+        "start": 20532810,
+        "end": 20664046
+    },
+    "ZNF278": {
+        "referenceName": "22",
+        "start": 31721790,
+        "end": 31742218
+    },
+    "ZNF331": {
+        "referenceName": "19",
+        "start": 54024235,
+        "end": 54083523
+    },
+    "ZNF384": {
+        "referenceName": "12",
+        "start": 6775643,
+        "end": 6798738
+    },
+    "ZNF521": {
+        "referenceName": "18",
+        "start": 22641890,
+        "end": 22932154
+    },
+    "ZNF9": {
+        "referenceName": "3",
+        "start": 128888327,
+        "end": 128902765
+    },
+    "ZRSR2": {
+        "referenceName": "X",
+        "start": 15808595,
+        "end": 15841383
+    }
+}
