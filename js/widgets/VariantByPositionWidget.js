@@ -69,27 +69,6 @@ var VariantByPositionWidget = function(selector){
   $('#output').append(this.variant_window)
 
   $('#pos_submit').click(function(e){
-    e.preventDefault()
-    var l = Ladda.create(this)
-    l.start()
-    $('#barplot').html("")
-    $('#barplot').show()
-    $('#variant_window').html("")
-    $('#variant_panel').hide()
-    
-    var cancer_type = $('#primary_site').val()
-    var variantSetId_field = variantSetIds[cancer_type]
-    console.log(cancer_type)
-    console.log(variantSetId_field)
-
-    //place holder for data, referenceName changed to seq_region_name
-    var request = {"end": Number($('#end').val()), "pageSize": null, "pageToken": null, "start": Number($('#start').val()), "callSetIds": null, "variantName": null, "referenceName": $('#referenceName').val(), "variantSetIds": variantSetId_field}
-    console.log(request)
-    $.when(GASearchVariantsRec(JSON.stringify(request)).then(function(data){
-      l.stop()
-      variants_search(data)
-    }))
-    return false;
 
   })
 
