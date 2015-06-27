@@ -64,7 +64,7 @@ var variant_explorer = function(l){
     if (genes != null){
 
       //set tabs
-      $('#output').append($('<div>').attr('id', 'query_results'));
+      // $('#output').append($('<div>').attr('id', 'query_results'));
 
       $('#output_tablist').append($('<li role="presentation" class="active">')
           .append($('<a href="#query_results" aria-controls="query_results" role="tab" data-toggle="tab">')

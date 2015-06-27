@@ -1,1 +1,1 @@
-var proxy_path = 'http://localhost:6000'
+var proxy_path = 'http://localhost:5000'
