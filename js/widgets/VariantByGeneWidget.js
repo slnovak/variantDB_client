@@ -28,11 +28,15 @@ var VariantByGeneWidget = function(selector){
   })
 
   this.form.append($('<span class="help-block">').text("Query by Gene"))
+       // .append($('<div class="form-group input-container">')
+       //  .append($('<label>Select Primary Site:</label>'))
+       //  .append(this.select))
        .append($('<div class="form-group input-container">')
-        .append($('<label>Select Primary Site:</label>'))
-        .append(this.select))
-       .append($('<div class="form-group input-container">')
-        .append($('<label>Enter Gene:</label>')).append(that.select_2))
+        .append($('<label>Enter Gene:</label>'))
+        .append(that.select_2))
+       // .append($('<div class="container">')
+       //  .append($('<input class="typeahead form-control">').attr('type', 'text')
+       //    .attr('id', 'gene_search').attr('placeholder', 'Search Genes'))))
        .append($('<button class="btn btn-primary ladda-button">')
             .attr('data-style', 'expand-right')
             .attr('data-spinner-color', '#74F9FF')
@@ -41,6 +45,10 @@ var VariantByGeneWidget = function(selector){
             .append('<span class="ladda-label">Submit</span>'))
   
   this.selector.append(this.form)
+
+  $('#output_content').append($('<div>').attr('id', 'mutation_plot'))
+
+  lollipop_plot('#mutation_plot')
 
   $('#gene_submit').click(function(e){
     e.preventDefault()

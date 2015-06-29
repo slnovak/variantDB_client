@@ -9,12 +9,13 @@
   <script src="jquery/jquery.min.js"></script>
   <script src="jquery-ui/jquery-ui.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/plugins/d3tip.js"></script>
+<!--   // <script src="js/plugins/d3tip.js"></script> -->
   <script src="js/plugins/spin.min.js"></script>
   <script src="js/plugins/ladda.min.js"></script>
   <script src="js/plugins/c3.min.js"></script>
+  <script src="js/plugins/typeahead.min.js"></script>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/d3tip.css" rel="stylesheet" />
+<!--   <link href="css/d3tip.css" rel="stylesheet" /> -->
   <link href="css/ladda-themeless.min.css" rel="stylesheet"/>
   <link href="css/c3.css" rel="stylesheet" />
   
@@ -23,7 +24,7 @@
 </head>
 <body>
   <div class="container-fluid">
-    <h2>Variant Store</h2>
+    <h2 id="title">Variant Store<br/><small><i>TileDB implementation for Somatic Variants</i></small></h2>
     <div role="tabpanel">
       <ul class="nav nav-tabs" id="tablist" role="tablist">
       </ul>
@@ -31,18 +32,6 @@
       </div>
     </div>
   <div>
-<!--     <div id="main" class="row">
-      <div id="input" class="col-sm-4">
-      </div>
-      <div id="output" class="col-sm-8">
-        <div role="tabpanel">
-          <ul class="nav nav-tabs" id="output_tablist" role="tablist">
-          </ul>
-          <div class="tab-content" id="output_content">
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
   <script src="conf.json"></script>
   <script src="js/main.js"></script>
@@ -52,6 +41,7 @@
   <script src="js/json/projects_by_type.json"></script>
   <script src="js/json/gene_counts.json"></script>
   <script src="js/json/just_genes.json"></script>
+  <script src="js/json/raw_gene_counts.json"></script>
   <script src="js/functions/plots.js"></script>
   <script src="js/widgets/VariantExplorerWidget.js"></script>
   <script src="js/widgets/VariantByPositionWidget.js"></script>

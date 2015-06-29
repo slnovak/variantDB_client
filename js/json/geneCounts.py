@@ -10,7 +10,7 @@ if __name__ == "__main__":
     for l in f2:
         l = l.strip()
         pcg.append(l)
-    # print pcg
+    print "var gene_list = " + str(pcg[1:])
 
     data = {}
     counts = ["counts"]
@@ -19,11 +19,14 @@ if __name__ == "__main__":
     mutations_raw_counts = {}
     mutations_normalized = {}
     mutations_all = {}
+    counts_all = {}
+    gene_consensus = {}
     for line in f:
         line = line.strip()
         eles = line.split(",")
         bucket = round_this(int(eles[10]))
         gene_length = int(eles[8]) - int(eles[7])
+        ref = eles[3][3:]
         blood = int(eles[11])
         bladder = int(eles[12])
         brain = int(eles[13])
@@ -48,10 +51,18 @@ if __name__ == "__main__":
 
         if eles[0] in pcg:
             if int(eles[10]) != 0:
-                mutations_raw_counts[eles[0]] = int(eles[10])
-        #mutations_raw_counts.append({"name":eles[0], 'all': int(eles[10]), 'blood':blood, 'bladder':bladder, 'brain':brain, 'bone':bone, 'breast':breast, 'head':head, 'cervix':cervix, 'colorectal':colo, 'esophagus':eso, 'kidney': kid, 'liver':liv, 'ovary':ov, 'lung':lung, 'pancreas':panc, 'prostate': pros, 'skin':skin, 'stomach':stom, 'uterus': uter})
+                #mutations_raw_counts[eles[0]] = int(eles[10])
+                counts_all[eles[0]] = {'all':int(eles[10]), 'blood':blood, 'bladder':bladder, 'brain':brain, 'bone':bone, 'breast':breast, 'head':head, 'cervix':cervix, 'colorectal':colo, 'esophagus':eso, 'kidney': kid, 'liver':liv, 'ovary':ov, 'lung':lung, 'pancreas':panc, 'prostate': pros, 'skin':skin, 'stomach':stom, 'uterus': uter, "name": eles[0]}
+                # mutations_raw_counts.append({"name":eles[0], 'all': int(eles[10]), 'blood':blood, 'bladder':bladder, 'brain':brain, 'bone':bone, 'breast':breast, 'head':head, 'cervix':cervix, 'colorectal':colo, 'esophagus':eso, 'kidney': kid, 'liver':liv, 'ovary':ov, 'lung':lung, 'pancreas':panc, 'prostate': pros, 'skin':skin, 'stomach':stom, 'uterus': uter})
         #mutations_normalized.append({"name":eles[0], 'all':int(eles[10])/gene_length, 'blood':blood/gene_length, 'bladder':bladder/gene_length, 'brain':brain/gene_length, 'bone':bone/gene_length, 'breast':breast/gene_length, 'head':head/gene_length, 'cervix':cervix/gene_length, 'colorectal':colo/gene_length, 'esophagus':eso/gene_length, 'kidney': kid/gene_length, 'liver':liv/gene_length, 'ovary':ov/gene_length, 'lung':lung/gene_length, 'pancreas':panc/gene_length, 'prostate': pros/gene_length, 'skin':skin/gene_length, 'stomach':stom/gene_length, 'uterus': uter/gene_length})
+        if eles[0] in pcg:
+            data = ''
+            if eles[0] in counts_all:
+                data = counts_all[eles[0]]
+            else:
+                data = {'all':int(eles[10]), 'blood':blood, 'bladder':bladder, 'brain':brain, 'bone':bone, 'breast':breast, 'head':head, 'cervix':cervix, 'colorectal':colo, 'esophagus':eso, 'kidney': kid, 'liver':liv, 'ovary':ov, 'lung':lung, 'pancreas':panc, 'prostate': pros, 'skin':skin, 'stomach':stom, 'uterus': uter, "name": eles[0]}
 
+            gene_consensus[eles[0]] = {"referenceName": str(ref), "start":eles[7], "end":eles[8], "data": data}
         # zero = eles[29]
         # if int(zero) != 0:
         #     print 'UHOH'
@@ -69,12 +80,31 @@ if __name__ == "__main__":
     #sorted_raw = sorted(mutations_raw_counts, key=itemgetter('all'))
     #sorted_nom = sorted(mutations_normalized, key=itemgetter('all'))
     # # sorted_all = sorted(mutations_all)
-    sorted_x = sorted(mutations_all.items(), key=operator.itemgetter(1))
-    sorted_y = sorted(mutations_raw_counts.items(), key=operator.itemgetter(1))
-    oneeight = sorted_x[len(sorted_x)-181:len(sorted_x)-1]
-    oneeight_y = sorted_y[len(sorted_y)-181:len(sorted_y)-1]
-    for x in oneeight:
-        print x[0] + "\t" + str(x[1])
+    # sorted_x = sorted(mutations_all.items(), key=operator.itemgetter(1))
+    # sorted_y = sorted(mutations_raw_counts.items(), key=operator.itemgetter(1))
+    sorted_counts = sorted(counts_all.items(), key=operator.itemgetter(1), reverse=True)
+    # oneeight = sorted_x[len(sorted_x)-181:len(sorted_x)-1]
+    #oneeight_y = sorted_y[len(sorted_y)-181:len(sorted_y)-1]
+    # oneeight_c = sorted_counts[len(sorted_counts)-181:len(sorted_counts)-1]
+    oneeight_rev = sorted_counts[0:1000]
+
+    # print "var gene_census = {"
+    # for x in sorted(gene_consensus):
+    #     print '\t"'+str(x) + '" : { '
+    #     for y in gene_consensus[x]:
+    #         if y == 'referenceName':
+    #             print '\t\t"' + str(y) + '" : ' + '"'+ str(gene_consensus[x][y]) + '",'
+    #         else:
+    #             print '\t\t"' + str(y) + '" : ' + str(gene_consensus[x][y]) + ","
+    #     print "\t},"
+
+    # print "}"
+
+    # print "var raw_gene_counts = ["
+    # for x in oneeight_rev:
+    #     # print x[0] + "\t" + str(x[1])
+    #     print str(x[1]) + ","
+    # print "]"
 
     # buckets1 = []
     # for bucket in sorted(buckets):
