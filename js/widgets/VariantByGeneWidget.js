@@ -46,7 +46,8 @@ var VariantByGeneWidget = function(selector){
   
   this.selector.append(this.form)
 
-  $('#output_content').append($('<div>').attr('id', 'mutation_plot'))
+  $('#output_content').append($('<div>').attr('id', 'mutation_plot')
+      .css('padding-top', '20px'))
 
   lollipop_plot('#mutation_plot')
 

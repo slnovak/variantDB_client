@@ -52,6 +52,7 @@ function lollipop_plot(selector){
 
     // Add our chart to the #chart div
     var svg = d3.select(selector).append("svg")
+      .data(lollis)
       .attr("width", width)
       .attr("height", height)
       .append("g")
@@ -72,6 +73,14 @@ function lollipop_plot(selector){
       .attr('transform', 'translate('+(-margin.bottom+5)+",0)")
       .call(yAxis);
 
+    // svg.append("text")
+    //   .attr("class", "y label")
+    //   .attr("text-anchor", "end")
+    //   .attr("y", 6)
+    //   .attr("dy", ".31em")
+    //   .attr("transform", "rotate(-90)")
+    //   .text("Mutation Count");
+
     svg.selectAll(".bar")
       .data(lollis)
     .enter().append("rect")
@@ -85,7 +94,7 @@ function lollipop_plot(selector){
       .attr("y", function(d) { 
         d.count = +d.count
         console.log(y(d.count)*.9 - 33)
-        return y(d.count)*.9 - 35; })
+        return y(d.count)*.9 - 33; })
       .attr("height", function(d) {
         d.count = +d.count 
         console.log((height-d.count)*.9)
@@ -97,7 +106,15 @@ function lollipop_plot(selector){
       .attr("r", 4)
       .attr("fill",function(d,i){return color(i);})
       .attr("cx", function(d) { return d.pos*10 })
-      .attr("cy", function(d) { return y(d.count)*.9 - 33 }) 
+      .attr("cy", function(d) { return y(d.count)*.9 -33 }) 
+
+    svg.append("g").selectAll("text").data(lollis).enter()
+      .append("text").attr('dx', 8)
+      .attr("dy", '.31em').text(function(d){
+        return d.count;
+      })
+      .attr("x", function(d){ return d.pos*10;})
+      .attr("y", function(d){ return y(d.count)*.9 -35})
 
 }
 
