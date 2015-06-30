@@ -5,13 +5,13 @@
   shape-rendering: crispEdges;
 }
 
-.bar {
+/*.bar {
   fill: orange;
-}
+}*/
 
-.bar:hover {
+/*.bar:hover {
   fill: orangered ;
-}
+}*/
 
 .x.axis path {
   display: none;

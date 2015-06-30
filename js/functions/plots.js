@@ -1,21 +1,40 @@
-function lollipop_plot(selector){
+function lollipop_plot(selector, gene, data){
 
-  var lollis = [
-    {'name': 'one', 'pos': 1, 'count': 10},
-    {'name': 'one', 'pos': 5, 'count': 5},
-    {'name': 'one', 'pos': 8, 'count': 20},
-    {'name': 'one', 'pos': 10, 'count': 1},
-  ]
+  var vsID = {
+    6: "Cervix", 
+    16: "Stomach", 
+    10: "Liver", 
+    15: "Skin", 
+    1: "Bladder", 
+    2: "Brain", 
+    5: "Head and Neck", 
+    12: "Lung", 
+    4: "Breast", 
+    7: "Colorectal", 
+    9: "Kidney", 
+    17: "Uterus", 
+    8: "Esophagus", 
+    13: "Pancreas", 
+    14: "Prostate", 
+    11: "Ovary", 
+    3: "Bone", 
+    0: "Blood"
+  }
 
-  lollis_x = [1,5,8,10,20]
-  lollis_y = [10, 5, 20, 1]
+  var start = gene_census[gene]['start'], end = gene_census[gene]['end'], diff = end-start
 
-  // var tip = d3.tip()
-  // .attr('class', 'd3-tip')
-  // .offset([-10, 0])
-  // .html(function(d) {
-  //   return "<strong>Count:</strong> <span style='color:red'>" + d.count + "</span>";
-  // })
+  var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    vs_str = ''
+    $.each(d.vs_tracker, function(ps){
+      if (ps != 'All'){
+        vs_str += "<strong> "+vsID[ps]+" : </strong><span style='color:yellow'> " + d.vs_tracker[ps] + " </span><br/>"
+      }
+    })
+    return "<strong> Ref/Alt: </strong> <span style='color:red'> " + d.referenceBases + " / " + d.alternateBases + " </span><br/>"+vs_str;
+  })
 
   var margin = {
       top: 20,
@@ -23,17 +42,18 @@ function lollipop_plot(selector){
       bottom: 30,
       left: 60
     },
-    width = 750 - margin.left - margin.right,
+    width = 1050 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-    // Our X scale
-    var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .1);
+    // X Scale
+    var x = d3.scale.linear()
+      .domain([start, end+width])
+      .range([0, width], 1)
 
     // Our Y scale
     var y = d3.scale.linear()
-        .domain([0, d3.max(lollis, function(d) { return d.count + 10; })])
-        .rangeRound([height, 0]);
+        .domain([0, d3.max(data, function(d) { d.calls = +d.calls; return d.calls + 2; })])
+        .rangeRound([height-50, 0]);
 
     // Our color bands
     var color = d3.scale.category20();
@@ -47,22 +67,22 @@ function lollipop_plot(selector){
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
-        .tickFormat(d3.format(".2s"));
+        .tickFormat(d3.format("d"));
 
 
     // Add our chart to the #chart div
     var svg = d3.select(selector).append("svg")
-      .data(lollis)
+      .data(data)
       .attr("width", width)
       .attr("height", height)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-      // svg.call(tip);
+    svg.call(tip);
 
     svg.append('g')
       .attr('fill', 'none')
       .style('stroke', 'silver')
-      .style('stroke-width', '15px')
+      .style('stroke-width', '20px')
       .attr('transform', 'translate(0,'+String(height-margin.bottom+5)+")")
       .call(xAxis);
     
@@ -73,48 +93,40 @@ function lollipop_plot(selector){
       .attr('transform', 'translate('+(-margin.bottom+5)+",0)")
       .call(yAxis);
 
-    // svg.append("text")
-    //   .attr("class", "y label")
-    //   .attr("text-anchor", "end")
-    //   .attr("y", 6)
-    //   .attr("dy", ".31em")
-    //   .attr("transform", "rotate(-90)")
-    //   .text("Mutation Count");
+    svg.append("g")
+      .attr("class", "y axis")
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("# Mutations");
 
     svg.selectAll(".bar")
-      .data(lollis)
+      .data(data)
     .enter().append("rect")
       .attr("class", "bar")
       .attr("fill", 'gray')
       .attr("x", function(d) { 
-        d.pos = +d.pos
-        console.log(d.pos)
-        return d.pos*10; })
+        d.start = +d.start
+        return x(d.start); })
       .attr("width", 1.5)
       .attr("y", function(d) { 
-        d.count = +d.count
-        console.log(y(d.count)*.9 - 33)
-        return y(d.count)*.9 - 33; })
+        d.calls = +d.calls
+        return y(d.calls); })
       .attr("height", function(d) {
-        d.count = +d.count 
-        console.log((height-d.count)*.9)
-        return height - y(d.count)*.9; 
+        d.calls = +d.calls 
+        return height - y(d.calls); 
       });
 
-    svg.selectAll("circle").data(lollis).enter()
+    svg.selectAll("circle").data(data).enter()
       .append("svg:circle")
       .attr("r", 4)
       .attr("fill",function(d,i){return color(i);})
-      .attr("cx", function(d) { return d.pos*10 })
-      .attr("cy", function(d) { return y(d.count)*.9 -33 }) 
-
-    svg.append("g").selectAll("text").data(lollis).enter()
-      .append("text").attr('dx', 8)
-      .attr("dy", '.31em').text(function(d){
-        return d.count;
-      })
-      .attr("x", function(d){ return d.pos*10;})
-      .attr("y", function(d){ return y(d.count)*.9 -35})
+      .attr("cx", function(d) { return x(d.start); })
+      .attr("cy", function(d) { return y(d.calls); }) 
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
 
 }
 
@@ -143,11 +155,12 @@ function plotCounts(selector, min, max, l){
       type: 'bar',
       keys: {
         x: 'name', // it's possible to specify 'x' when category axis
-        value: ['cervix', 'stomach', 'kidney', 'prostate', 'liver', 'bladder', 'brain', 'lung', 'blood', 'colorectal', 'skin', 'uterus', 'esophagus', 'pancreas', 'head', 'ovary', 'bone', 'breast'],
+        value: ['all']
+        //value: ['cervix', 'stomach', 'kidney', 'prostate', 'liver', 'bladder', 'brain', 'lung', 'blood', 'colorectal', 'skin', 'uterus', 'esophagus', 'pancreas', 'head', 'ovary', 'bone', 'breast'],
       },
-      groups:[
-           ['cervix', 'stomach', 'kidney', 'prostate', 'liver', 'bladder', 'brain', 'lung', 'blood', 'colorectal', 'skin', 'uterus', 'esophagus', 'pancreas', 'head', 'ovary', 'bone', 'breast']  
-      ]
+      // groups:[
+      //      ['cervix', 'stomach', 'kidney', 'prostate', 'liver', 'bladder', 'brain', 'lung', 'blood', 'colorectal', 'skin', 'uterus', 'esophagus', 'pancreas', 'head', 'ovary', 'bone', 'breast']  
+      // ]
     },
     axis: {
       rotated: true,

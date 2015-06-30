@@ -46,17 +46,13 @@ var VariantByGeneWidget = function(selector){
   
   this.selector.append(this.form)
 
-  $('#output_content').append($('<div>').attr('id', 'mutation_plot')
-      .css('padding-top', '20px'))
-
-  lollipop_plot('#mutation_plot')
-
   $('#gene_submit').click(function(e){
     e.preventDefault()
     $('#output_tablist').html("");
     $('#output_content').html("");
     var la = Ladda.create(this)
     la.start()
+
     variant_explorer(la);
     return false;
 
@@ -74,28 +70,36 @@ var variant_explorer = function(l){
 
       //set tabs
       // $('#output').append($('<div>').attr('id', 'query_results'));
-
       $('#output_tablist').append($('<li role="presentation" class="active">')
-          .append($('<a href="#query_results" aria-controls="query_results" role="tab" data-toggle="tab">')
-            .text('Results')))
+          .append($('<a href="#query_muts_results" aria-controls="query_muts_results" role="tab" data-toggle="tab">')
+            .text('Mutations')))
 
       $('#output_tablist').append($('<li role="presentation">')
           .append($('<a href="#query_statistics_gene" aria-controls="query_statistics_gene" role="tab" data-toggle="tab">')
             .text('Gene Stats')))
 
       $('#output_tablist').append($('<li role="presentation">')
+          .append($('<a href="#query_results" aria-controls="query_results" role="tab" data-toggle="tab">')
+            .text('Results')))
+
+      $('#output_tablist').append($('<li role="presentation">')
           .append($('<a href="#query_statistics" aria-controls="query_statistics" role="tab" data-toggle="tab">')
             .text('Query Stats')))
 
       $('#output_content').append($('<div role="tabpanel" class="tab-pane active">')
-          .attr('id', 'query_results'));
+          .attr('id', 'query_muts_results'));
 
       $('#output_content').append($('<div role="tabpanel" class="tab-pane">')
            .attr('id', 'query_statistics_gene'));
 
       $('#output_content').append($('<div role="tabpanel" class="tab-pane">')
+          .attr('id', 'query_results'));
+
+      $('#output_content').append($('<div role="tabpanel" class="tab-pane">')
            .attr('id', 'query_statistics'));
 
+      $('#query_muts_results').append($('<div>').attr('id', 'mutation_plot')
+        .css('padding-top', '20px'))
       
 
       var getBatch = function(requests, callback, timer){
@@ -150,8 +154,36 @@ var variant_explorer = function(l){
       var callback = function(data, stats, responses, timer){
         timer.stop()
 
+
+        //lollipop plot
+        // console.log(responses[genes[0]]['variants'])
+        var mut_cnts = responses[genes[0]]['variants'].map(function(variant){
+          // console.log(variant['calls'])
+          var all = variant['calls'].length
+          var vs_tracker = {'All': all}
+          variant['calls'].forEach(function(call){
+            // console.log(callSetId2VS[call['callSetId']])
+            if (vs_tracker[callSetId2VS[call['callSetId']]] == undefined){
+              vs_tracker[callSetId2VS[call['callSetId']]] = 1;
+            }else{
+              vs_tracker[callSetId2VS[call['callSetId']]] += 1
+            }
+          })
+
+          variant['vs_tracker'] = vs_tracker;
+          variant['calls'] = all;
+          // console.log(variant)
+          //variant['calls'] = variant['calls'].length
+          // console.log(variant['calls'])
+          // console.log(JSON.stringify(variant))
+          return variant
+        })
+
+        var lolli = lollipop_plot('#mutation_plot', genes[0], mut_cnts)
+
         // biology statistiscs
 
+/***
         // all genes
         $('#query_results').append($("<div class='row'>").attr('id', 'mutation_counts'))
         $('#query_statistics_gene').append($("<div class='row'>").attr('id', 'mutation_counts_gene'))
@@ -278,6 +310,8 @@ var variant_explorer = function(l){
           .width(400)
           .height(400)
           .draw()
+
+      **/
       }
 
       // make requests, and build promise
@@ -296,4 +330,5 @@ var variant_explorer = function(l){
     return false;
 
 }
+
 
